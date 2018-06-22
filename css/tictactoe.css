@@ -1,0 +1,98 @@
+#message {
+    width: 100%;
+    text-align: left;
+    font-size: 2rem;
+}
+
+.container {
+    margin: 10px;
+}
+
+.gameboard {
+    margin: 10px;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.row {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.item {
+    flex: 0 0 150px;
+}
+
+.circle {
+    width: 70px;
+    height: 70px;
+    border: 30px solid #666666;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.cross {
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+    position: relative;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    /* IE 9 */
+    -webkit-transform: rotate(45deg);
+    /* Safari and Chrome */
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+
+.cross:before,
+.cross:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: #666666;
+}
+
+.cross:before {
+    left: 50%;
+    width: 30%;
+    margin-left: -15%;
+    height: 100%;
+}
+
+.cross:after {
+    top: 50%;
+    height: 30%;
+    margin-top: -15%;
+    width: 100%;
+}
+
+.item {
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item > div[class=""] {
+    width: 100px;
+    height: 100px;
+}
+
+.item:not(:last-child) {
+    border-right: 5px solid #e4e4e4;
+}
+
+.row:not(:last-child) {
+    border-bottom: 5px solid #e4e4e4;
+}
+
+.emptyCell {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}

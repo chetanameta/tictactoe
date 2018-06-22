@@ -1,0 +1,19 @@
+{
+  "name": "chetanameta/tictactoe",
+  "description": "Tictactoe game implementation using PHP.",
+  "type": "project",
+  "require": {
+    "components/jquery": "1.9.*"
+  },
+  "authors": [
+    {
+      "name": "Chetan Ameta",
+      "email": "chetanameta@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "ChetanAmeta\\": "src/"
+    }
+  }
+}
